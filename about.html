@@ -1,0 +1,102 @@
+<!-- File: about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Ruslan Borisevich</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Ruslan Borisevich</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="ri-menu-line"></i>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <a href="index.html" class="nav-link"><i class="ri-home-4-line"></i> Home</a>
+                    <a href="projects.html" class="nav-link"><i class="ri-code-box-line"></i> Projects</a>
+                    <a href="about.html" class="nav-link"><i class="ri-user-line"></i> About</a>
+                    <a href="contact.html" class="nav-link"><i class="ri-mail-line"></i> Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about">
+            <div class="about-content">
+                <h1>About Me</h1>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>Hello! I'm Ruslan Borisevich, a passionate software developer with a keen interest in creating innovative digital solutions. With a background in computer science and extensive industry experience, I specialize in full-stack web development and cutting-edge technologies.</p>
+                        <p>My expertise spans across multiple technologies including React, Node.js, Python, and cloud computing. I'm committed to writing clean, efficient code and solving complex problems with elegant solutions.</p>
+                        
+                        <h3>Skills</h3>
+                        <div class="skills-grid">
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Docker</span>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="D:\portfolio website\RuslanBorisevichImage.png" alt="Ruslan Borisevich">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/ruslan-borisevich/" target="_blank" class="social-icon">
+                <i class="ri-linkedin-fill"></i>
+            </a>
+            <a href="https://github.com/Bewdiful" target="_blank" class="social-icon">
+                <i class="ri-github-fill"></i>
+            </a>
+            <a href="mailto:ruslanbori@gmail.com" class="social-icon">
+                <i class="ri-mail-send-line"></i>
+            </a>
+        </div>
+        <p>&copy; 2025 Ruslan Borisevich. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+          // Hamburger menu functionality
+          document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.getElementById('hamburger');
+            const dropdownMenu = document.getElementById('dropdownMenu');
+            
+            hamburger.addEventListener('click', function(e) {
+                e.stopPropagation();
+                dropdownMenu.classList.toggle('show');
+            });
+            
+            document.addEventListener('click', function() {
+                dropdownMenu.classList.remove('show');
+            });
+            
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', function() {
+                    dropdownMenu.classList.remove('show');
+                });
+            });
+        });
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

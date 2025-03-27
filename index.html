@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruslan Borisevich - Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <!-- Regular Navigation -->
+      <ul class="nav-links">
+        <li>
+          <a href="index.html" class="active">
+            <i class="ri-home-4-line"></i> Home </a>
+        </li>
+        <li>
+          <a href="projects.html">
+            <i class="ri-code-box-line"></i> Projects </a>
+        </li>
+        <li>
+          <a href="about.html">
+            <i class="ri-user-line"></i> About </a>
+        </li>
+        <li>
+          <a href="contact.html">
+            <i class="ri-mail-line"></i> Contact </a>
+        </li>
+      </ul>
+      <!-- Hamburger Menu (only shows on mobile) -->
+      <!-- Hamburger Menu -->
+<div class="hamburger" id="hamburger">
+  <i class="ri-menu-line"></i>
+  <div class="dropdown-menu" id="dropdownMenu">
+      <a href="index.html" class="nav-link"><i class="ri-home-4-line"></i> Home</a>
+      <a href="projects.html" class="nav-link"><i class="ri-code-box-line"></i> Projects</a>
+      <a href="about.html" class="nav-link"><i class="ri-user-line"></i> About</a>
+      <a href="contact.html" class="nav-link"><i class="ri-mail-line"></i> Contact</a>
+  </div>
+</div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Hi, I'm Ruslan Borisevich</h1>
+          <h2>B.Sc. in Software Engineering <i class="ri-external-link-line degree-link" onclick="showDegree()"></i>
+          </h2>
+          <div class="skills-highlight">
+            <div class="skills-categories">
+              <div class="skill-category">
+                <h3>
+                  <i class="ri-dashboard-line"></i> Current Focus
+                </h3>
+                <div class="current-focus">
+                  <p>Completing comprehensive training in:</p>
+                  <div class="focus-items">
+                    <div class="focus-item">
+                      <i class="ri-docker-line"></i>
+                      <span>Docker & Kubernetes</span>
+                    </div>
+                    <div class="focus-item">
+                      <i class="ri-stack-line"></i>
+                      <span>Full-Stack Development</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h3>
+                  <i class="ri-tools-line"></i> Core Technologies
+                </h3>
+                <div class="skill-items">
+                  <span class="skill-tag">
+                    <i class="ri-html5-line"></i> HTML/CSS </span>
+                  <span class="skill-tag">
+                    <i class="ri-javascript-line"></i> JavaScript </span>
+                  <span class="skill-tag">
+                    <i class="ri-reactjs-line"></i> React </span>
+                  <span class="skill-tag">
+                    <i class="ri-nodejs-line"></i> Node.js </span>
+                  <span class="skill-tag">
+                    <i class="ri-database-line"></i> PostgreSQL </span>
+                  <span class="skill-tag">
+                    <i class="ri-docker-line"></i> Docker </span>
+                  <span class="skill-tag">
+                    <i class="ri-cloud-line"></i> Kubernetes </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-buttons">
+            <a href="projects.html" class="btn btn-primary">
+              <i class="ri-code-line"></i> View Projects </a>
+            <a href="about.html" class="btn btn-secondary">
+              <i class="ri-profile-line"></i> My Resume </a>
+          </div>
+        </div>
+        <div class="hero-images">
+          <img src="RuslanBorisevichImage.png" alt="Ruslan Borisevich" class="profile-photo">
+        </div>
+        <div class="scroll-down" onclick="scrollToProjects()">
+          <p>View My Work</p>
+          <i class="ri-arrow-down-line scroll-down-arrow"></i>
+        </div>
+      </section>
+      <!-- Degree Image Modal -->
+      <div id="degreeModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <img src="B.Sc. in Software Engineering.png" alt="Degree Certificate" class="modal-image">
+        </div>
+      </div>
+      <section id="featured-projects" class="featured-projects">
+        <div class="projects-container">
+          <div class="projects-text">
+            <h2>Featured Projects</h2>
+            <p>Projects demonstrating my expertise in containerization and full-stack development.</p>
+            <a href="projects.html" class="btn btn-primary">
+              <i class="ri-arrow-right-line"></i> All Projects </a>
+          </div>
+          <div class="projects-preview">
+            <div class="project-card">
+              <img src="/api/placeholder/350/250" alt="Containerized App">
+              <h3>Containerized Web App</h3>
+              <p>Dockerized React/Node.js application with Kubernetes orchestration</p>
+              <div class="project-links">
+                <a href="projects.html#web-app" class="btn btn-primary">Details</a>
+                <a href="#" class="btn btn-secondary">GitHub</a>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="/api/placeholder/350/250" alt="Full-Stack App">
+              <h3>Full-Stack Application</h3>
+              <p>React frontend with Node.js backend and PostgreSQL database</p>
+              <div class="project-links">
+                <a href="projects.html#db-system" class="btn btn-primary">Details</a>
+                <a href="#" class="btn btn-secondary">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/ruslan-borisevich/" target="_blank" class="social-icon">
+          <i class="ri-linkedin-fill"></i>
+        </a>
+        <a href="https://github.com/Bewdiful" target="_blank" class="social-icon">
+          <i class="ri-github-fill"></i>
+        </a>
+        <a href="mailto:ruslanbori@gmail.com" class="social-icon">
+          <i class="ri-mail-send-line"></i>
+        </a>
+      </div>
+      <p>&copy; 2025 Ruslan Borisevich. All Rights Reserved.</p>
+    </footer>
+    <script>
+      function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+      }
+
+      function scrollToProjects() {
+        document.getElementById('featured-projects').scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+
+      function showDegree() {
+        const modal = document.getElementById('degreeModal');
+        modal.style.display = 'block';
+      }
+
+      function closeModal() {
+        const modal = document.getElementById('degreeModal');
+        modal.style.display = 'none';
+      }
+      // Close modal when clicking outside of it
+      window.onclick = function(event) {
+        const modal = document.getElementById('degreeModal');
+        if (event.target == modal) {
+          modal.style.display = 'none';
+        }
+      }
+      // Responsive menu toggle
+      document.addEventListener('DOMContentLoaded', function() {
+        const hamburger = document.querySelector('.hamburger');
+        hamburger.addEventListener('click', toggleMenu);
+      })
+      document.getElementById('hamburger').addEventListener('click', function(e) {
+        e.stopPropagation(); // Prevent immediate closing
+        document.getElementById('dropdownMenu').classList.toggle('show');
+      });
+      // Close menu when clicking anywhere else
+      document.addEventListener('click', function() {
+        document.getElementById('dropdownMenu').classList.remove('show');
+      });
+      
+    </script>
+  </body>
+</html>
