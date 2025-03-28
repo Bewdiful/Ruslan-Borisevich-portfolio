@@ -1,59 +1,186 @@
-<!-- File: contact.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Ruslan Borisevich</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <title>Contact Us</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <style>
+        :root {
+            --primary-purple: #6a11cb;
+            --secondary-purple: #2575fc;
+            --dark-background: #121212;
+            --light-background: #f4f4f4;
+            --text-color-dark: #ffffff;
+            --text-color-light: #000000;
+            --transition-speed: 0.3s;
+        }
+        body {
+            background: var(--secondary-purple);
+            color: var(--text-color-dark);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .nav {
+            background: var(--primary-purple);
+            padding: 15px;
+            text-align: center;
+        }
+        .nav a {
+            color: var(--text-color-dark);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .container {
+            background: rgba(114, 70, 236, 0.904);
+            padding: 80px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            box-shadow: rgba;
+            width: 40%;
+            height: 40%;
+            max-width: 3500x;
+            margin: 50px auto;
+            align-content:
+        }
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.2);
+            color: var(--text-color-dark);
+        }
+        button {
+            background: linear-gradient(45deg, var(--primary-purple), var(--secondary-purple));
+            color: var(--text-color-dark);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: var(--transition-speed);
+        }
+        button:hover {
+            background: linear-gradient(45deg, var(--secondary-purple), var(--primary-purple));
+        }
+        .container h1 {
+    font-size: 3.5rem; /* Increased size */
+    text-align: center;
+    margin: 2rem 0;
+    color: var(--text-color-dark);
+    position: relative;
+   
+}
+
+        /* Social Links Container */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Increased gap */
+    margin: 3rem 0; /* More vertical spacing */
+    color: #f4f4f4;
+}
+
+/* Social Icons */
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px; /* Larger click area */
+    height: 80px;
+    background: rgba(226, 223, 230, 0.1);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.social-icon i {
+    font-size: 2.5rem; /* Larger icons */
+    color: var(--primary-purple);
+}
+
+/* Hover Effects */
+.social-icon:hover {
+    background: rgba(197, 216, 221, 0.2);
+    transform: translateY(-5px) scale(1.1);
+}
+
+.social-icon:hover i {
+    color: var(--secondary-purple);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container h1 {
+        font-size: 1.5rem;
+    }
+    
+    .social-links {
+        gap: 1.5rem;
+    }
+    
+    .social-icon {
+        width: 60px;
+        height: 60px;
+        color: #ffffff;
+    }
+    
+    .social-icon i {
+        font-size: 2rem;
+        color: #f4f4f4;
+    }
+}
+
+        
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Ruslan Borisevich</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
+    <nav class="top-nav">
+        <div class="nav-container">
+            <div class="logo">RB</div>
+            <ul class="nav-menu">
+                <li>
+                    <a href="index.html" class="nav-link">
+                        <i class="fas fa-home"></i> Home
+                    </a>
+                </li>
+                <li>
+                    <a href="projects.html" class="nav-link active">
+                        <i class="fas fa-folder-open"></i> Projects
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html" class="nav-link">
+                        <i class="fas fa-user"></i> About
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html" class="nav-link">
+                        <i class="fas fa-envelope"></i> Contact
+                    </a>
+                </li>
             </ul>
-            <div class="hamburger" id="hamburger">
-                <i class="ri-menu-line"></i>
-                <div class="dropdown-menu" id="dropdownMenu">
-                    <a href="index.html" class="nav-link"><i class="ri-home-4-line"></i> Home</a>
-                    <a href="projects.html" class="nav-link"><i class="ri-code-box-line"></i> Projects</a>
-                    <a href="about.html" class="nav-link"><i class="ri-user-line"></i> About</a>
-                    <a href="contact.html" class="nav-link"><i class="ri-mail-line"></i> Contact</a>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <section class="contact">
-            <div class="contact-content">
-                <h1>Get In Touch</h1>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <footer>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Get In Touch</h1>
         <div class="social-links">
             <a href="https://www.linkedin.com/in/ruslan-borisevich/" target="_blank" class="social-icon">
                 <i class="ri-linkedin-fill"></i>
@@ -65,15 +192,36 @@
                 <i class="ri-mail-send-line"></i>
             </a>
         </div>
-        <p>&copy; 2025 Ruslan Borisevich. All Rights Reserved.</p>
-    </footer>
-
-    <script>
-        
-        function toggleMenu() {
-            const navLinks = document.querySelector('.nav-links');
-            navLinks.classList.toggle('active');
-        }
-    </script>
+        <form>
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
 </body>
 </html>
+
+<footer>
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/ruslan-borisevich/" target="_blank" class="social-icon">
+            <i class="ri-linkedin-fill"></i>
+        </a>
+        <a href="https://github.com/Bewdiful" target="_blank" class="social-icon">
+            <i class="ri-github-fill"></i>
+        </a>
+        <a href="mailto:ruslanbori@gmail.com" class="social-icon">
+            <i class="ri-mail-send-line"></i>
+        </a>
+    </div>
+    <p>&copy; 2025 Ruslan Borisevich. All Rights Reserved.</p>
+</footer>

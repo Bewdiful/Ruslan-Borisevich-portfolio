@@ -1,61 +1,135 @@
-<!-- File: about.html -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Ruslan Borisevich</title>
+    <title>Ruslan Borisevich - Home</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">Ruslan Borisevich</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <i class="ri-menu-line"></i>
-                <div class="dropdown-menu" id="dropdownMenu">
-                    <a href="index.html" class="nav-link"><i class="ri-home-4-line"></i> Home</a>
-                    <a href="projects.html" class="nav-link"><i class="ri-code-box-line"></i> Projects</a>
-                    <a href="about.html" class="nav-link"><i class="ri-user-line"></i> About</a>
-                    <a href="contact.html" class="nav-link"><i class="ri-mail-line"></i> Contact</a>
-                </div>
-            </div>
-        </nav>
-    </header>
 
-    <main>
-        <section class="about">
-            <div class="about-content">
-                <h1>About Me</h1>
-                <div class="about-grid">
-                    <div class="about-text">
-                        <p>Hello! I'm Ruslan Borisevich, a passionate software developer with a keen interest in creating innovative digital solutions. With a background in computer science and extensive industry experience, I specialize in full-stack web development and cutting-edge technologies.</p>
-                        <p>My expertise spans across multiple technologies including React, Node.js, Python, and cloud computing. I'm committed to writing clean, efficient code and solving complex problems with elegant solutions.</p>
-                        
-                        <h3>Skills</h3>
-                        <div class="skills-grid">
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">React</span>
-                            <span class="skill-tag">Node.js</span>
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">AWS</span>
-                            <span class="skill-tag">Docker</span>
-                        </div>
-                    </div>
-                    <div class="about-image">
-                        <img src="D:\portfolio website\RuslanBorisevichImage.png" alt="Ruslan Borisevich">
-                    </div>
+<body>
+    <nav class="top-nav">
+        <div class="nav-container">
+            <div class="logo">RB</div>
+            <ul class="nav-menu">
+                <li>
+                    <a href="index.html" class="nav-link active">
+                        <i class="fas fa-home"></i> Home
+                    </a>
+                </li>
+                <li>
+                    <a href="projects.html" class="nav-link">
+                        <i class="fas fa-folder-open"></i> Projects
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html" class="nav-link">
+                        <i class="fas fa-user"></i> About
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html" class="nav-link">
+                        <i class="fas fa-envelope"></i> Contact
+                    </a>
+                </li>
+            </ul>
+            <div class="theme-toggle">
+                <input type="checkbox" id="dark-mode-toggle">
+                <label for="dark-mode-toggle" class="theme-toggle-label">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </label>
+            </div>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-content">
+            
+            <h1>Ruslan Borisevich</h1>
+            <h2>B.Sc. in Software Engineering <i class="ri-external-link-line degree-link"
+                    onclick="showDegree()"></i>
+            </h2>
+            <img src="RuslanBorisevichImage.png" alt="Ruslan Borisevich" class="profile-image">
+            <div id="degree-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <img src="B.Sc. in Software Engineering.png" alt="Degree Certificate" class="modal-image">
                 </div>
             </div>
-        </section>
-    </main>
+            <div class="skill-items">
+                <span class="skill-tag">
+                  <i class="ri-html5-line"></i> HTML/CSS
+                </span>
+                <span class="skill-tag">
+                  <i class="ri-javascript-line"></i> JavaScript
+                </span>
+                <span class="skill-tag">
+                  <i class="ri-git-branch-line"></i> Git
+                </span>
+                <span class="skill-tag">
+                  <i class="ri-github-fill"></i> GitHub
+                </span>
+                <span class="skill-tag">
+                  <i class="ri-reactjs-line"></i> React
+                </span>
+                <span class="skill-tag">
+                  <i class="ri-database-line"></i> PostgreSQL
+                </span>
+                <span class="skill-tag">
+                  <i class="ri-database-line"></i> MongoDB
+                </span>
+                <span class="skill-tag">
+                  <i class="ri-docker-line"></i> Docker
+                </span>
+                <span class="skill-tag">
+                  <i class="ri-cloud-line"></i> Kubernetes
+                </span>
+                <span class="skill-tag">
+                  <i class="ri-terminal-line"></i> SQL
+                </span>
+                <span class="skill-tag">
+                  <i class="ri-api-line"></i> Postman
+                </span>
+                <span class="skill-tag">
+                  <i class="ri-nodejs-line"></i> Node.js
+                </span>
+              </div>
+            <div class="hero-buttons">
+                <a href="projects.html" class="btn btn-primary">
+                    <i class="ri-code-line"></i> View Projects </a>
+                <a href="contact.html" class="btn btn-secondary">
+                    <i class="ri-mail-line"></i> Contact</a>
+            </div>
+            <p class="bio">
+                Hello! I'm a dedicated <span class="highlight-text">Full Stack Web Developer</span> with a <span class="highlight-text">Bachelor's Degree in Software Engineering</span>. My passion for technology drives me to create <span class="highlight-text">innovative</span> and <span class="highlight-text">functional</span> web applications that enhance user experiences. I pride myself on being <span class="highlight-text">responsible</span>, <span class="highlight-text">honest</span>, and <span class="highlight-text">hardworking</span>, always striving to deliver exceptional results in every project I undertake.
+                
+                <br><br>
+                
+                As a <span class="highlight-text">quick learner</span>, I thrive in <span class="highlight-text">fast-paced environments</span>, adapting seamlessly to new challenges and technologies.
+              </p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/ruslan-borisevich/" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Bewdiful" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:ruslanbori@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <div id="degree-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img src="B.Sc. in Software Engineering.png" alt="B.Sc. in Software Engineering Degree"
+                class="degree-full-image">
+        </div>
+    </div>
 
     <footer>
         <div class="social-links">
@@ -73,30 +147,28 @@
     </footer>
 
     <script>
-          // Hamburger menu functionality
-          document.addEventListener('DOMContentLoaded', function() {
-            const hamburger = document.getElementById('hamburger');
-            const dropdownMenu = document.getElementById('dropdownMenu');
-            
-            hamburger.addEventListener('click', function(e) {
-                e.stopPropagation();
-                dropdownMenu.classList.toggle('show');
-            });
-            
-            document.addEventListener('click', function() {
-                dropdownMenu.classList.remove('show');
-            });
-            
-            document.querySelectorAll('.nav-link').forEach(link => {
-                link.addEventListener('click', function() {
-                    dropdownMenu.classList.remove('show');
-                });
-            });
-        });
-        function toggleMenu() {
-            const navLinks = document.querySelector('.nav-links');
-            navLinks.classList.toggle('active');
+        function showDegree() {
+            const degreeModal = document.getElementById('degree-modal');
+            if (degreeModal) {
+                degreeModal.style.display = 'block';
+            }
         }
+        document.addEventListener('DOMContentLoaded', () => {
+            const closeModal = document.querySelector('.close-modal');
+            const degreeModal = document.getElementById('degree-modal');
+            if (closeModal && degreeModal) {
+                closeModal.addEventListener('click', () => {
+                    degreeModal.style.display = 'none';
+                });
+                window.addEventListener('click', (event) => {
+                    if (event.target === degreeModal) {
+                        degreeModal.style.display = 'none';
+                    }
+                });
+            }
+        });
     </script>
+    <script src="script.js"></script>
 </body>
+
 </html>
