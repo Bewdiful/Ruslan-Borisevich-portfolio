@@ -1,84 +1,73 @@
-# Ruslan Borisevich - Web Developer Portfolio
+# Welcome to your Lovable project
 
-## Project Overview
-This is a fully responsive, modern web developer portfolio showcasing Ruslan Borisevich's skills, projects, and professional background.
+## Project info
 
-## Features
-- Responsive design
-- Dark mode toggle
-- Smooth scrolling
-- Project showcase
-- Skills visualization
-- Contact form
-- Social media links
+**URL**: https://lovable.dev/projects/4bb21829-288e-45a4-ba70-3b04632ad48f
 
-## Prerequisites
-- Modern web browser
-- Text editor (VS Code recommended)
-- Git (optional, for version control)
+## How can I edit this code?
 
-## Local Deployment
+There are several ways of editing your application.
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/Bewdiful/portfolio.git
-cd portfolio
+**Use Lovable**
+
+Simply visit the [Lovable Project](https://lovable.dev/projects/4bb21829-288e-45a4-ba70-3b04632ad48f) and start prompting.
+
+Changes made via Lovable will be committed automatically to this repo.
+
+**Use your preferred IDE**
+
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+
+Follow these steps:
+
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
+
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
+
+# Step 3: Install the necessary dependencies.
+npm i
+
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
 ```
 
-### 2. Project Structure
-```
-portfolio/
-│
-├── index.html
-├── styles.css
-├── script.js
-├── RuslanBorisevichImage.png
-├── B.Sc. in Software Engineering.png
-└── project-images/
-    ├── ecommerce-project.png
-    ├── weather-project.png
-    └── task-manager-project.png
-```
+**Edit a file directly in GitHub**
 
-### 3. Deployment Options
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-#### A. GitHub Pages
-1. Create a GitHub repository
-2. Push your files to the repository
-3. In repository settings, enable GitHub Pages
-4. Choose the main branch as the source
+**Use GitHub Codespaces**
 
-#### B. Netlify
-1. Sign up on Netlify
-2. Drag and drop your project folder
-3. Netlify will automatically deploy your site
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-#### C. Local Development
-- Open `index.html` directly in your browser
-- Use a local server like Live Server in VS Code
+## What technologies are used for this project?
 
-## Customization
-- Replace images with your own
-- Update personal information in HTML
-- Modify project and skills data in `script.js`
-- Adjust color scheme in `styles.css`
+This project is built with:
 
-## Optimization Tips
-- Compress images
-- Minimize CSS and JavaScript
-- Use lazy loading for images
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
 
-## Technologies Used
-- HTML5
-- CSS3
-- JavaScript (ES6+)
-- Font Awesome for icons
+## How can I deploy this project?
 
-## License
-MIT License
+Simply open [Lovable](https://lovable.dev/projects/4bb21829-288e-45a4-ba70-3b04632ad48f) and click on Share -> Publish.
 
-## Contact
-Ruslan Borisevich
-- Email: ruslanbori@gmail.com
-- LinkedIn: https://www.linkedin.com/in/ruslan-borisevich/
-- GitHub: https://github.com/Bewdiful
+## Can I connect a custom domain to my Lovable project?
+
+Yes it is!
+
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
